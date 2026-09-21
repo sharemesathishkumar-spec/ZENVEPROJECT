@@ -1,0 +1,1124 @@
+/* =========================================
+   APP LAYOUT
+========================================= */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  background: #f7faf8;
+  color: #17333a;
+}
+
+.sidebar {
+  width: 286px;
+  min-height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e1e8e5;
+  flex-shrink: 0;
+}
+
+.brand {
+  height: 94px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #e1e8e5;
+}
+
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dfbd62;
+  color: white;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.brand span {
+  color: #718087;
+  font-size: 13px;
+}
+
+.sidebar nav {
+  padding: 20px 14px;
+}
+
+.menu {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 14px;
+  background: transparent;
+  text-align: left;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.menu.active {
+  background: #008f83;
+  color: white;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  padding: 24px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.top-header h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.top-header p {
+  margin: 6px 0 0;
+  color: #75848a;
+  font-size: 13px;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-controls span {
+  color: #718087;
+  font-size: 12px;
+}
+
+.header-controls select {
+  min-height: 44px;
+  border: 1px solid #dce5e1;
+  border-radius: 11px;
+  background: white;
+  padding: 0 14px;
+  color: #30444a;
+}
+
+.help-btn {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: #edf8f6;
+  color: #008f83;
+  cursor: pointer;
+}
+
+
+/* =========================================
+   REPORT PANEL
+========================================= */
+
+.report-panel {
+  background: white;
+  border: 1px solid #e0e8e4;
+  border-radius: 17px;
+  padding: 16px;
+  display: flex;
+  align-items: end;
+  gap: 18px;
+  flex-wrap: wrap;
+  box-shadow: 0 3px 12px rgba(20, 60, 50, 0.04);
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.field-group label,
+.search-box label,
+.doctor-select label {
+  font-size: 12px;
+  color: #587079;
+  font-weight: 500;
+}
+
+.field-group select,
+.field-group input {
+  height: 44px;
+  min-width: 160px;
+  padding: 0 12px;
+  border: 1px solid #dce5e1;
+  border-radius: 11px;
+  background: white;
+}
+
+.send-field select {
+  min-width: 320px;
+}
+
+.report-actions {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  align-items: end;
+}
+
+.outline-btn,
+.send-btn {
+  min-height: 44px;
+  padding: 0 17px;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.outline-btn {
+  background: white;
+  border: 1px solid #dce5e1;
+  color: #52666d;
+}
+
+.send-btn {
+  border: 1px solid #008f83;
+  background: #008f83;
+  color: white;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-panel {
+  margin-top: 14px;
+  background: white;
+  border: 1px solid #e0e8e4;
+  border-radius: 17px;
+  padding: 16px;
+  display: flex;
+  align-items: end;
+  gap: 14px;
+}
+
+.search-box,
+.doctor-select {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.search-box {
+  flex: 1;
+}
+
+.doctor-select {
+  flex: 1;
+}
+
+.search-box input,
+.doctor-select select {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #dce5e1;
+  border-radius: 11px;
+  padding: 0 14px;
+  background: white;
+}
+
+.add-btn,
+.visit-btn {
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.add-btn {
+  border: 1px solid #008f83;
+  background: #008f83;
+  color: white;
+}
+
+.visit-btn {
+  border: 1px solid #efc8c2;
+  background: white;
+  color: #dc665a;
+}
+
+
+/* =========================================
+   STATUS FILTER
+========================================= */
+
+.status-panel {
+  margin-top: 14px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #e0e8e4;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.status-panel span {
+  color: #587079;
+  font-size: 13px;
+}
+
+.status-panel label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #53676e;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   DOCTOR TABLE
+========================================= */
+
+.table-card {
+  margin-top: 14px;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e0e8e4;
+  border-radius: 17px;
+  box-shadow: 0 3px 12px rgba(20, 60, 50, 0.04);
+}
+
+.table-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-card th {
+  height: 52px;
+  background: #f8faf9;
+  color: #5b7077;
+  font-size: 12px;
+  text-align: left;
+  padding: 0 18px;
+}
+
+.table-card td {
+  height: 72px;
+  border-top: 1px solid #edf1ef;
+  padding: 0 18px;
+  font-size: 13px;
+}
+
+.doctor-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #def3ef;
+  color: #008f83;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.status-badge,
+.reported-badge {
+  display: inline-flex;
+  padding: 8px 13px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status-badge {
+  background: #ffe1dc;
+  color: #e65d50;
+}
+
+.reported-badge {
+  background: #dff5ed;
+  color: #008f83;
+}
+
+.eye-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #b9dfda;
+  background: white;
+  color: #008f83;
+  cursor: pointer;
+}
+
+.option-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.pre-btn,
+.post-btn {
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pre-btn {
+  border: 1px solid #dce5e1;
+  background: white;
+  color: #52666d;
+}
+
+.post-btn {
+  border: 1px solid #008f83;
+  background: #008f83;
+  color: white;
+}
+
+.empty-table {
+  text-align: center;
+  color: #718087;
+  padding: 35px !important;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.success-message,
+.error-message,
+.loading-message {
+  margin-top: 12px;
+  padding: 12px 15px;
+  border-radius: 10px;
+}
+
+.success-message {
+  background: #e4f6ef;
+  color: #087c68;
+}
+
+.error-message {
+  background: #ffe8e5;
+  color: #c94f43;
+}
+
+.loading-message {
+  background: white;
+  color: #61747b;
+}
+
+
+/* =========================================
+   COMMON MODAL
+========================================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(20, 30, 30, 0.42);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  z-index: 9999;
+}
+
+
+/* =========================================
+   PRE VISIT / POST VISIT MODAL
+========================================= */
+
+.modal {
+  position: relative;
+
+  width: 750px;
+  max-width: 100%;
+
+  max-height: calc(100vh - 48px);
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  padding: 30px 36px 22px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.22);
+
+  color: #26383a;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   MODAL TITLE
+========================================= */
+
+.modal h2 {
+  margin: 0 0 18px;
+
+  padding-right: 45px;
+
+  font-size: 25px;
+
+  line-height: 1.25;
+
+  font-weight: 700;
+
+  color: #293a38;
+}
+
+
+/* =========================================
+   MODAL CLOSE BUTTON
+========================================= */
+
+.modal .close {
+  position: absolute;
+
+  top: 18px;
+  right: 22px;
+
+  width: 38px;
+  height: 38px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: #87918f;
+
+  font-size: 30px;
+
+  line-height: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.modal .close:hover {
+  background: #f1f4f3;
+  color: #26383a;
+}
+
+
+/* =========================================
+   MODAL DOCTOR INFORMATION
+========================================= */
+
+.doctor-info {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  column-gap: 12px;
+
+  row-gap: 8px;
+
+  margin-bottom: 26px;
+
+  color: #74817f;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.doctor-info strong {
+  color: #52615f;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   SPECIALIZATION TAG
+========================================= */
+
+.speciality-tag {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+
+  background: #dff5ef;
+
+  color: #008f83;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   MODAL FORM
+========================================= */
+
+.modal form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   TWO COLUMN FORM
+========================================= */
+
+.modal .form-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+
+/* =========================================
+   FORM FIELD
+========================================= */
+
+.modal form > div,
+.modal .form-grid > div {
+  min-width: 0;
+}
+
+
+/* =========================================
+   FORM LABEL
+========================================= */
+
+.modal label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #60706d;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.02em;
+}
+
+
+/* =========================================
+   MODAL INPUT / SELECT / TEXTAREA
+========================================= */
+
+.modal input,
+.modal select,
+.modal textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #dce5e1;
+
+  border-radius: 12px;
+
+  background: #fbfcfa;
+
+  color: #273a38;
+
+  outline: none;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.modal input,
+.modal select {
+  height: 51px;
+
+  padding: 0 15px;
+}
+
+.modal textarea {
+  min-height: 96px;
+
+  padding: 14px 15px;
+
+  resize: vertical;
+}
+
+.modal input::placeholder,
+.modal textarea::placeholder {
+  color: #858d8c;
+}
+
+.modal input:focus,
+.modal select:focus,
+.modal textarea:focus {
+  border-color: #008f83;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(0, 143, 131, 0.10);
+}
+
+
+/* =========================================
+   MODAL ERROR
+========================================= */
+
+.modal .error-message {
+  margin-top: 0;
+
+  margin-bottom: 0;
+
+  padding: 11px 14px;
+
+  border-radius: 10px;
+
+  background: #ffe8e5;
+
+  color: #c94f43;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   MODAL FOOTER
+========================================= */
+
+.modal-footer {
+  display: flex;
+
+  justify-content: flex-end;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 10px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #e8eeeb;
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.cancel-btn {
+  min-width: 84px;
+
+  height: 46px;
+
+  padding: 0 18px;
+
+  border: 1px solid #dce5e1;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #61706d;
+
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background: #f7f9f8;
+}
+
+
+/* =========================================
+   SAVE / MARK AS REPORTED BUTTON
+========================================= */
+
+.save-btn {
+  min-width: 168px;
+
+  height: 46px;
+
+  padding: 0 18px;
+
+  border: 1px solid #008f83;
+
+  border-radius: 11px;
+
+  background: #008f83;
+
+  color: #ffffff;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #007c72;
+}
+
+.save-btn:disabled,
+.cancel-btn:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   REPORT MODAL
+========================================= */
+
+.report-modal {
+  position: relative;
+
+  width: 850px;
+
+  max-width: 90vw;
+
+  max-height: 80vh;
+
+  background: white;
+
+  border-radius: 14px;
+
+  padding: 24px;
+
+  overflow-y: auto;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.2);
+
+  box-sizing: border-box;
+}
+
+.modal-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+.modal-header button {
+  width: 36px;
+
+  height: 36px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f3f3f3;
+
+  font-size: 24px;
+
+  cursor: pointer;
+}
+
+.report-list,
+.history-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.report-row,
+.history-row {
+  border: 1px solid #e5e5e5;
+
+  border-radius: 10px;
+
+  padding: 15px;
+
+  background: #fafafa;
+
+  display: grid;
+
+  gap: 7px;
+}
+
+.empty-message {
+  text-align: center;
+
+  padding: 30px;
+
+  color: #777;
+}
+
+
+/* =========================================
+   DOCTOR DETAILS MODAL
+========================================= */
+
+.details-modal {
+  position: relative;
+
+  width: 520px;
+
+  max-width: 90vw;
+
+  max-height: 85vh;
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.22);
+
+  box-sizing: border-box;
+}
+
+.details-modal .close {
+  position: absolute;
+
+  top: 16px;
+
+  right: 18px;
+
+  width: 38px;
+
+  height: 38px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #f3f5f4;
+
+  color: #5e6d6a;
+
+  font-size: 25px;
+
+  cursor: pointer;
+}
+
+.details-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.details-header h2 {
+  margin: 0 0 4px;
+
+  color: #263a38;
+}
+
+.details-header p {
+  margin: 0;
+
+  color: #75827f;
+}
+
+.big-avatar {
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #def3ef;
+
+  color: #008f83;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.details-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0;
+}
+
+.details-list > div {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 13px 0;
+
+  border-bottom: 1px solid #edf1ef;
+}
+
+.details-list span {
+  color: #71807d;
+
+  font-size: 13px;
+}
+
+.details-list strong {
+  color: #293b39;
+
+  font-size: 14px;
+
+  text-align: right;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .top-header,
+  .search-panel,
+  .report-panel {
+    flex-wrap: wrap;
+  }
+
+  .report-actions {
+    margin-left: 0;
+  }
+
+  .table-card {
+    overflow-x: auto;
+  }
+
+  .table-card table {
+    min-width: 950px;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .modal-overlay {
+    padding: 12px;
+  }
+
+  .modal {
+    width: 100%;
+
+    max-height: calc(100vh - 24px);
+
+    padding: 24px 20px 18px;
+
+    border-radius: 17px;
+  }
+
+  .modal h2 {
+    font-size: 21px;
+  }
+
+  .modal .form-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .modal form {
+    gap: 15px;
+  }
+
+  .modal-footer {
+    flex-direction: column-reverse;
+
+    align-items: stretch;
+  }
+
+  .cancel-btn,
+  .save-btn {
+    width: 100%;
+  }
+
+  .doctor-info {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .details-modal {
+    width: 100%;
+
+    padding: 24px 20px;
+  }
+}
